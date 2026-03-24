@@ -82,6 +82,9 @@ The system includes pre-configured views for instant reporting:
     ```
 
 ---
+## 🎥 Demo Video
+Watch the full walkthrough and system demonstration here:
+👉 [RHDC Database Walkthrough](https://drive.google.com/file/d/1LkIXYGWE9NBmwFZD2kJN3qc1vxtOQ4vs/view?usp=sharing)
 
 ## 🚀 Getting Started
 
