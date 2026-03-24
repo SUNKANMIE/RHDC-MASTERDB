@@ -88,10 +88,6 @@ The system includes pre-configured views for instant reporting:
 ### Prerequisites
 * A PostgreSQL client (e.g., pgAdmin, DBeaver) or a Supabase account.
 
-### Connection Details
-* **Project URL:** `https://glorvdsmvqcdqpbryjmg.supabase.co`
-* **Connection String:** `postgresql://rhdc_reviewer:StrongPassword123@db.xyzcompany.supabase`
-
 ### Installation Steps
 1.  **Clone the Repo:** `git clone https://github.com/your-username/rhdc-master-db.git`
 2.  **Initialize Schema:** Run `schema.sql` to build the table structures.
@@ -100,12 +96,29 @@ The system includes pre-configured views for instant reporting:
 
 ---
 
-## 📂 Project Structure
-```text
-rhdc-master-db/
-├── schema.sql        # Database DDL (Tables, Constraints, Indexes)
-├── seed.sql          # Realistic sample data for testing
-├── queries.sql       # Operational scripts (CRUD, status updates)
-├── views.sql         # Complex analytical views
-├── ERD.png           # Visual Entity Relationship Diagram
-└── README.md         # Project documentation
+## 🚀 Deployment & Usage Guide
+
+To get the **RHDC Master Operational Database** up and running, follow these steps in order:
+
+### 1. Database Connection
+Connect via **Supabase Dashboard** or any standard PostgreSQL client (pgAdmin, DBeaver, or psql).
+
+* **Project URL:** `https://glorvdsmvqcdqpbryjmg.supabase.co`
+* **Connection String:** `postgresql://rhdc_reviewer:StrongPassword123@db.xyzcompany.supabase`
+
+### 2. Initialization Sequence
+Execute the SQL files in the following order to ensure all dependencies and foreign keys are handled correctly:
+
+1.  **`schema.sql`**: Creates the core table structures, indexes, and constraints.
+2.  **`seed.sql`**: Populates the database with realistic test data (100+ participants).
+3.  **`queries.sql`**: Contains pre-written scripts for common operations (e.g., updating a score or checking a status).
+
+---
+
+## 🏁 Conclusion
+
+The **RHDC Master Operational Database** is built on the philosophy of **"Integrity over Complexity."** By prioritizing a clean, normalized schema and efficient SQL views, this system provides:
+
+* **Practicality:** Directly addresses the manual bottlenecks currently facing Remote Hustle.
+* **Efficiency:** Optimized indexes and views ensure the leaderboard stays fast, even with thousands of rows.
+* **Scalability:** The modular design allows for new stages or scoring criteria to be added without breaking the core architecture.
